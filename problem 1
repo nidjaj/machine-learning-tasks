@@ -1,0 +1,17 @@
+Question 
+create 2D numpy  based array with given conditions:
+
+i)   take input from user in terms of dimension like (3x2 or 6x7)
+ii)   fill this numpy array with random number
+iii)  store this array in a file
+Solution 
+#!/usr/bin/python3
+import numpy as np
+a=int(input("enter the no of rows"))                #To take integer input from user
+b=int(input("enter the no of column"))
+e = np.random.random((a,b)) 
+print ("\nA random array:\n", e) 
+np.save(outfile, e)
+np.load(outfile)
+
+
