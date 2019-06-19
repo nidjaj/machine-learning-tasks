@@ -1,0 +1,12 @@
+Question
+create 2D numpy  based array with given conditions:
+
+i)   take input from user in terms of dimension like (3x2 or 6x7)
+ii)   fill this numpy array with random number
+iii)  store this array in a file
+solution
+
+a=np.arange(100,200,5)
+b=a[0:16].reshape(8,2)
+
+print(b)
